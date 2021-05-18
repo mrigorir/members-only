@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :articles
+  has_many :posts
   
   validates(:username, presence: true, length: { in: 3..10 }, uniqueness: true, on: :create)
 

@@ -1,0 +1,11 @@
+<li class="shadow-sm list-unstyled py-2 pl-3 mb-3 fz-20 border position-relative"> 
+  <span class="font-weight-bold text-primary"> <%= "#{post.id} - " %> </span> 
+  <span> <%= "#{post.title}"%> </span>
+  <p class="text-secondary pt-3 pl-5">Created: <%= current_user.username %> </p>
+  <div class="position-absolute" style="top: 35%; right: 10px;"> 
+    <span class="px-3 py-2 badge badge-warning rounded"> <%= link_to '', edit_post_path(post.id), class: 'fa fa-pencil-alt fz-20'%> </span>
+    <span class="px-3 py-2 mx-3 badge badge-danger rounded"> <%= link_to '', post_path(post.id), class: 'fa fa-trash fz-20', method: :delete, data: { confirm: "Are you sure?" }
+%> </span>
+  </div>
+  <span class="pl-3"> <%= link_to 'Read more', post, class: 'btn btn-link text-decoration-none'%> </span>
+</li>
