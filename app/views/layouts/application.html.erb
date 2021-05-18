@@ -17,6 +17,7 @@
     <% if alert %>
       <p class="alert alert-danger padding text-center text-danger"><%= alert %></p>
     <%end%>
+    <%= render 'shared/nav' %>
     <%= yield %>
   </body>
 </html>
