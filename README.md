@@ -2,7 +2,7 @@
 
 # Members Only
 
-> This is a Members-only app from the Odin Project and it's goal is to achieve the best coding practices for using Ruby on Rails. Members of the app can see who the author of a post is but, outside, they can only see the story.
+> This is an application for members only of the Odin Project and its goal is to achieve the best coding practices for using Ruby on Rails. Members of the app can see who the author of a post is, but outside they can only see the story.
   
 **What was built in this project**
 
@@ -46,9 +46,7 @@ To get a local copy up and running follow these simple example steps:
 
 - If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal.
 
-- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where    
-
-  you want the project to be.
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 
 - Type `git clone`, and then paste the URL you copied in Step 3.<br>
 
@@ -57,7 +55,6 @@ To get a local copy up and running follow these simple example steps:
 - Press Enter. Your local copy will be created.
 
 Please Note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
-
 
 - After you get the project aiming to the desired directory, you need now to install ruby globally
   
