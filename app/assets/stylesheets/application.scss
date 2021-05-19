@@ -13,10 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap/scss/bootstrap';
 
- 
- @import 'bootstrap/scss/bootstrap';
- 
 .small-container {
   max-width: 650px;
 }
@@ -39,12 +37,12 @@
 }
 
 .margin-top {
-  margin-top: 1.5em;  
+  margin-top: 1.5em;
 }
 
 .field {
   @extend .margin-top;
-  
+
   label {
     @extend .text-uppercase;
     @extend .text-secondary;
@@ -74,7 +72,8 @@
     border: none;
   }
 
-  input, select {
+  input,
+  select {
     background-color: #ffede3;
     border-color: #fbc7ac;
     color: #eee;
@@ -92,7 +91,7 @@
 
   &.checkbox {
     label {
-      &:before {
+      &::before {
         background-color: #ffede3;
         border-color: #fbc7ac;
       }
