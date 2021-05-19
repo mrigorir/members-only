@@ -10,7 +10,7 @@
 
 - Created validations for all of the fields these tables possesses
 
-- Stabilished relationships between tables
+- Stabilised relationships between tables
 
 - Bootstrap
 
@@ -38,7 +38,7 @@ Text Editor (VSCode is suggested.) Ruby Rails Bundler Yarn SQL
 
 To get a local copy up and running follow these simple example steps:
 
-- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/mrigorir/members-only.git).
+- On the project, GitHub page, navigate to the main page of the repository [this page](https://github.com/mrigorir/members-only.git).
 
 - Click on a green button named `Code`.
 
@@ -54,13 +54,15 @@ To get a local copy up and running follow these simple example steps:
 
 - Press Enter. Your local copy will be created.
 
-Please Note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
+Please note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03).
 
 - After you get the project aiming to the desired directory, you need now to install ruby globally
   
   for that, in your terminal run `bundle install` to install the project's dependencies.
 
-- Run `db:migrate` so you can have the reprsentations of tables in your project
+- Run `yarn` to install all the dependencies.
+
+- Run `db:migrate` so you can have the representations of tables in your project
 
 - Run `rails c` in order to interact with your terminal app.
 
