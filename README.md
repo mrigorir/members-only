@@ -1,18 +1,22 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Micro_Reddit
+# Members Only
 
-> This is a Micro-reddit version from the true [reddit website](https://www.reddit.com/)  and it's goal is to achieve the best coding practices for posts using Ruby on Rails Active Record, applying CRUD actions, stabilishing relations between tables and validating the submitting input data from the user in order to avoid errors witch otherwise could affect the database information.  
-
+> This is a Members-only app from the Odin Project and it's goal is to achieve the best coding practices for using Ruby on Rails. Members of the app can see who the author of a post is but, outside, they can only see the story.
   
 **What was built in this project**
 
-- Created User, Post and Comment Models.
+- Created User and Post Models.
 
-- Created validations for all of the fields these table posseses
+- Created validations for all of the fields these tables possesses
 
 - Stabilished relationships between tables
 
+- Bootstrap
+
+- Devise
+
+- Action Text
 
 ## Built With
 
@@ -34,7 +38,7 @@ Text Editor (VSCode is suggested.) Ruby Rails Bundler Yarn SQL
 
 To get a local copy up and running follow these simple example steps:
 
-- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/mrigorir/micro-reddit.git).
+- On the project GitHub page, navigate to the main page of the repository [this page](https://github.com/mrigorir/members-only.git).
 
 - Click on a green button named `Code`.
 
@@ -48,7 +52,7 @@ To get a local copy up and running follow these simple example steps:
 
 - Type `git clone`, and then paste the URL you copied in Step 3.<br>
 
-  `$ git clone https://github.com/mrigorir/micro-reddit.git` <em>Press Enter key</em><br>
+  `$ git clone https://github.com/mrigorir/members-only.git` <em>Press Enter key</em><br>
 
 - Press Enter. Your local copy will be created.
 
@@ -71,18 +75,18 @@ Please Note that you must have Git installed on your PC, this can be done [here]
 - Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
 - LinkedIn: [@marco-alonso-parra](https://www.linkedin.com/in/marco-alonso-parra/)
 
+
 👤 **Nikos Pountzas**
 
-- GitHub: [@francisuloko](https://github.com/francisuloko)
-- Twitter: [@francisuloko](https://twitter.com/francisuloko)
-- LinkedIn: [@francisuloko](https://linkedin.com/in/francisuloko)
-
+- GitHub: [pountzas](https://github.com/pountzas)
+- Twitter: [@pountzas20](https://twitter.com/pountzas20)
+- LinkedIn: [Nikos Pountzas](https://www.linkedin.com/in/nikos-pountzas/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/mrigorir/micro-reddit/issues).
+Feel free to check the [issues page](https://github.com/mrigorir/members-only.git/issues).
 
 ## Show your support
 
