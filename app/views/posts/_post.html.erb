@@ -1,15 +1,17 @@
-<li class="shadow-sm list-unstyled py-2 pl-3 mb-3 fz-20 border position-relative"> 
-  <span class="font-weight-bold text-primary"> <%= "#{post.id} - " %> </span> 
+<li class="shadow-sm list-unstyled fz-20 border position-relative pt-3 mb-3"> 
+  <span class="text-primary " style="font-weight: bold; padding-left: 10px;"> <%= "#{post.id} - " %> </span> 
   <span> <%= "#{post.title}"%> </span>
   <% if user_signed_in? %>
-    <p class="text-secondary pt-3 pl-5">Created by: <%= current_user.email %> </p>
+    <span class="text-secondary pt-3 pl-5">Created by: 
+      <span style="font-weight: bold;"><%= post.user.email %></span> 
+    </span>
   <% else %>
     <p class="text-secondary pt-3 pl-5"></p>
   <% end %>
   <div class="position-absolute" style="top: 35%; right: 10px;"> 
-    <span class="px-3 py-2 badge badge-warning rounded"> <%= link_to '', edit_post_path(post.id), class: 'fa fa-pencil-alt fz-20'%> </span>
-    <span class="px-3 py-2 mx-3 badge badge-danger rounded"> <%= link_to '', post_path(post.id), class: 'fa fa-trash fz-20', method: :delete, data: { confirm: "Are you sure?" }
+    <span class="badge badge-warning rounded" style="font-size: 20px; background-color: gold;"> <%= link_to '', edit_post_path(post.id), class: 'fa fa-pencil-alt text-white' %> </span>
+    <span class="mx-3 badge badge-danger rounded" style="font-size: 20px; background-color: tomato;"> <%= link_to '', post_path(post.id), class: 'fa fa-trash text-white', method: :delete, data: { confirm: "Are you sure?" }
 %> </span>
   </div>
-  <span class="pl-3"> <%= link_to 'Read more', post, class: 'btn btn-link text-decoration-none'%> </span>
+  <p class="pl-3"> <%= link_to 'Read more', post, class: 'btn btn-link text-decoration-none px-2'%> </p>
 </li>

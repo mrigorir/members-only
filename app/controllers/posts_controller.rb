@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  before_action :find_post, only: %i[show edit update destroy]
-  before_action :authenticate_user!, only: %i[new create edit update destroy]
+  before_action :find_post, only: %i[edit show update destroy]
+  before_action :authenticate_user!, except: %i[index]
 
   def index
     @posts = Post.all
@@ -42,16 +42,12 @@ class PostsController < ApplicationController
   end
 
   def find_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :body)
   end
 
   private
 
-  def from_author
-    @user = User.find(params[:user_id])
-  end
-
   def find_post
-    @post = post.find(params[:id])
+    @post = Post.find(params[:id])
   end
 end

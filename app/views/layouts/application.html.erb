@@ -11,17 +11,13 @@
   </head>
 
   <body>
+    <%= render 'shared/nav' %>
     <% if notice %>
       <p class="notice alert-primary padding text-center text-primary"><%= notice %></p>
     <%end%>
     <% if alert %>
       <p class="alert alert-danger padding text-center text-danger"><%= alert %></p>
     <%end%>
-    <%= render 'shared/nav' %>
-    <div class="container">
-      <p></p>
-      <%= yield %>
-    </div>
-    
+    <%= yield %>
   </body>
 </html>

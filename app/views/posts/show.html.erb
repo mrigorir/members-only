@@ -1,2 +1,15 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="small-container center-block">
+  <h1 class="mt-5 text-center"><%= @post.title %></h1>
+  <div class="border ">
+    <p class="d-flex align-items-center justify-content-center pt-3"> Written by: 
+      <strong class="px-1"> <%= @post.user.email %> </strong> 
+    </p> 
+    <div class="mx-3 text-center">
+      <%= @post.body %>   
+    </div>
+    <div class="d-flex aling-items-center justify-content-center mt-3 mb-4">
+      <%= link_to 'Edit', edit_post_path(@post.id), class: 'btn btn-outline-secondary px-4', style: 'margin-right: 20px;'%> 
+      <%= link_to 'Delete', post_path, method: :delete,  class: 'btn btn-outline-dark px-4' %>
+    </div>
+  </div>
+</div>

@@ -13,4 +13,4 @@ Turbolinks.start()
 ActiveStorage.start()
 import "@fortawesome/fontawesome-free/css/all" 
 require("trix")
-require("@rails/actiontext")
+require("@rails/actiontext")  
